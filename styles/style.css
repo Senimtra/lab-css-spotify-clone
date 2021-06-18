@@ -28,12 +28,6 @@ h1 {
    font-weight: 500;
 }
 
-h4 {
-   color: #00b172;
-   font-weight: bold;
-   margin: 0.6em 0 0.9em;
-}
-
 a {
    text-decoration: none;
    color: #1a1a1a;
@@ -79,7 +73,7 @@ a {
 /* ### Middle-section-styles begin here ### */
 
 #middle-section img {
-   width: 5em;
+   width: 6em;
 }
 
 #middle-section {
@@ -87,22 +81,24 @@ a {
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 1.75em 0 2em;
+   padding: 2.5em 0 2em;
 }
 
-#on-spotify {
+#middle-section h2 {
    font-weight: bold;
-   margin-bottom: 1em;
+   font-size: 165%;
+   margin-bottom: 1.5em;
    text-decoration: underline 3px;
    text-underline-offset: 0.3em;
    text-decoration-color: #00b172;
+   line-height: 1.6em;
 }
 
 #features-wrapper {
    display: flex;
    justify-content: center;
    padding: 2em 0 1em;
-   margin: 0 1em;
+   margin: 0 2em;
 }
 
 .features {
@@ -112,9 +108,71 @@ a {
    align-items: center;
    text-align: center;
    margin: 0 1em;
+   align-self: baseline;
+}
+
+.features h4 {
+   color: #00b172;
+   font-weight: bold;
+   font-size: 140%;
+   margin: 0.8em 0 1em;
 }
 
 .features p {
-   font-size: 85%;
-   padding: 0 4em;
+   font-size: 110%;
+   padding: 0 1.5em;
+}
+
+/* ### Bottom-section-styles begin here ### */
+
+#bottom-section {
+   background-color: #00b172;
+   margin: 1.5em;
+   display: flex;
+   justify-content: center;
+   padding: 3em 4em;
+   position: relative;
+}
+
+#bottom-wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-right: 20%;
+}
+
+#bottom-wrapper h3 {
+   font-weight: 400;
+   font-size: 160%;
+   text-decoration: underline 3px;
+   text-underline-offset: 0.4em;
+   line-height: 1.6em;
+   margin-bottom: 0.75em;
+}
+
+#bottom-wrapper h5 {
+   font-weight: bold;
+   font-size: 140%;
+}
+
+#bottom-wrapper p {
+   width: 15.6em;
+   line-height: 1.6em;
+}
+
+#bottom-wrapper p:not(:last-child) {
+   margin-bottom: 0.7em;
+}
+
+#bottom-section img {
+   margin-top: 1.75em;
+   width: 15em;
+}
+
+#spotify-dot img {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 6em;
+   margin: -3em 0 0 -3em;
 }
