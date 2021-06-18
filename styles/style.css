@@ -14,20 +14,6 @@ body {
    color: white;
 }
 
-ul {
-   list-style: none;
-   display: flex;
-}
-
-ul li {
-   margin-left: 2em;
-}
-
-h1 {
-   font-size: 3.4em;
-   font-weight: 500;
-}
-
 a {
    text-decoration: none;
    color: #1a1a1a;
@@ -52,6 +38,15 @@ a {
    height: 3em;
 }
 
+ul {
+   list-style: none;
+   display: flex;
+}
+
+ul li {
+   margin-left: 2em;
+}
+
 /* ### Hero-section styles begin here ### */
 
 #hero {
@@ -62,6 +57,11 @@ a {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+}
+
+#hero h1 {
+   font-size: 3.4em;
+   font-weight: 500;
 }
 
 #hero-news {
@@ -176,3 +176,106 @@ a {
    width: 6em;
    margin: -3em 0 0 -3em;
 }
+
+/* ### Tablet version - Breakpoint at 768px ### */
+
+@media (max-width: 768px) {
+   #navbar {
+      padding: 0 1.4em;
+      height: 3.8em;
+      font-size: 100%;
+   }
+
+   #navbar img {
+      height: 2.8em;
+   }
+
+   ul li {
+      margin-left: 1em;
+   }
+
+   #hero h1 {
+      font-size: 3em;
+      position: relative;
+      top: 5%;
+   }
+
+   #hero-news {
+      font-size: 1.1em;
+      position: relative;
+      top: 5%;
+   }
+
+   #middle-section img {
+      width: 4em;
+   }
+
+   #middle-section {
+      padding: 1.5em 0 1em;
+   }
+
+   #middle-section h2 {
+      font-size: 165%;
+      margin-bottom: 0.5em;
+   }
+
+   .features {
+      margin: 0 0.5em;
+      align-self: center;
+   }
+
+   .features h4 {
+      color: #00b172;
+      font-weight: bold;
+      font-size: 110%;
+      margin: 0.8em 0 1em;
+   }
+
+   .features p {
+      font-size: 100%;
+      padding: 0 0.5em;
+   }
+
+   #bottom-section {
+      padding: 3em 3em;
+      flex-wrap: wrap;
+   }
+
+   #bottom-wrapper {
+      margin-right: 10%;
+      width: 45%;
+   }
+
+   #bottom-wrapper h3 {
+      font-weight: 400;
+      font-size: 140%;
+      text-decoration: underline 3px;
+      text-underline-offset: 0.4em;
+      line-height: 1.4em;
+      margin-bottom: 0.75em;
+   }
+
+   #bottom-wrapper h5 {
+      font-weight: bold;
+      font-size: 125%;
+   }
+
+   #bottom-wrapper p {
+      width: 95%;
+      line-height: 1.3em;
+   }
+
+   #bottom-section img {
+      margin-top: 0.5em;
+      align-self: flex-start;
+      width: 45%;
+   }
+
+   #spotify-dot img {
+      width: 6em;
+      margin: 3em 0 0 0;
+      position: static;
+   }
+}
+
+/* ### Mobile version - Breakpoint at 480px ### */
