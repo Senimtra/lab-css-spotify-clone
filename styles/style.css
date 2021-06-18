@@ -6,6 +6,7 @@
    font-weight: 300;
    margin: 0;
    padding: 0;
+   -webkit-text-size-adjust: none;
 }
 
 body {
@@ -19,10 +20,11 @@ a {
    color: #1a1a1a;
 }
 
-/* ### Navbar-sytles begin here ### */
+/* ### DESKTOP ### Navbar-sytles begin here ### */
 
 #navbar {
    background-color: white;
+   z-index: 1;
    color: #1a1a1a;
    display: flex;
    align-items: center;
@@ -47,7 +49,7 @@ ul li {
    margin-left: 2em;
 }
 
-/* ### Hero-section styles begin here ### */
+/* ### DESKTOP ### Hero-section styles begin here ### */
 
 #hero {
    background-image: url('../images/landing.jpg');
@@ -68,9 +70,10 @@ ul li {
    text-align: center;
    font-size: 1.25em;
    margin: 1em 0;
+   width: 55%;
 }
 
-/* ### Middle-section-styles begin here ### */
+/* ### DESKTOP ### Middle-section-styles begin here ### */
 
 #middle-section img {
    width: 6em;
@@ -123,7 +126,7 @@ ul li {
    padding: 0 1.5em;
 }
 
-/* ### Bottom-section-styles begin here ### */
+/* ### DESKTOP ### Bottom-section-styles begin here ### */
 
 #bottom-section {
    background-color: #00b172;
@@ -180,6 +183,8 @@ ul li {
 /* ### Tablet version - Breakpoint at 768px ### */
 
 @media (max-width: 768px) {
+   /* ### TABLET ### Navbar-sytles begin here ### */
+
    #navbar {
       padding: 0 1.4em;
       height: 3.8em;
@@ -194,17 +199,21 @@ ul li {
       margin-left: 1em;
    }
 
+   /* ### TABLET ### Hero-section styles begin here ### */
+
    #hero h1 {
       font-size: 3em;
       position: relative;
-      top: 5%;
+      top: 7%;
    }
 
    #hero-news {
       font-size: 1.1em;
       position: relative;
-      top: 5%;
+      top: 7%;
    }
+
+   /* ### TABLET ### Middle-section-styles begin here ### */
 
    #middle-section img {
       width: 4em;
@@ -235,6 +244,8 @@ ul li {
       font-size: 100%;
       padding: 0 0.5em;
    }
+
+   /* ### TABLET ### Bottom-section-styles begin here ### */
 
    #bottom-section {
       padding: 3em 3em;
@@ -279,3 +290,194 @@ ul li {
 }
 
 /* ### Mobile version - Breakpoint at 480px ### */
+
+@media (max-width: 480px) {
+   /* ### MOBILE ### Navbar-sytles begin here ### */
+
+   #navbar {
+      background-color: white;
+      color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      position: fixed;
+      width: 100%;
+      padding: 0 0em;
+      height: 7em;
+      font-size: 110%;
+   }
+
+   #navbar img {
+      height: 3em;
+   }
+
+   ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      width: 100vw;
+   }
+
+   ul li {
+      margin-left: 0em;
+   }
+
+   @media (max-width: 350px) {
+      #navbar {
+         height: 14em;
+      }
+      ul {
+         flex-direction: column;
+         align-items: center;
+      }
+      ul li {
+         font-size: 120%;
+      }
+   }
+
+   /* ### MOBILE ### Hero-section styles begin here ### */
+
+   #hero {
+      background-size: cover;
+      background-position: center;
+      height: calc(1.8 * 100vw);
+      padding: 0 1em;
+   }
+
+   #hero h1 {
+      font-size: 2.5em;
+      text-align: center;
+      top: 10%;
+   }
+
+   #hero-news {
+      width: 70%;
+      top: 10%;
+   }
+
+   @media (max-width: 350px) {
+      #hero {
+         height: calc(2.2 * 100vw);
+         padding-top: 14em;
+      }
+
+      #hero h1 {
+         top: 7%;
+      }
+
+      #hero-news {
+         font-size: 0.9em;
+         width: 80%;
+         top: 7%;
+      }
+   }
+
+   /* ### MOBILE ### Middle-section-styles begin here ### */
+
+   #middle-section {
+      padding: 2.5em 0;
+   }
+
+   #middle-section h2 {
+      margin: 1em 0;
+   }
+
+   #features-wrapper {
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+   }
+
+   .features {
+      width: 100%;
+      flex-direction: row;
+      padding: 2em 1em;
+   }
+
+   .features h4 {
+      font-size: 130%;
+      width: 70%;
+      margin: 0 1em;
+   }
+
+   .features p {
+      font-size: 100%;
+      padding: 0;
+   }
+
+   @media (max-width: 350px) {
+      #middle-section h2 {
+         text-align: center;
+      }
+
+      #middle-section img {
+         display: none;
+      }
+
+      .features {
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+
+      .features p {
+         margin-top: 0.5em;
+      }
+   }
+
+   /* ### MOBILE ### Bottom-section-styles begin here ### */
+
+   #bottom-section {
+      margin: 0;
+      padding: 0;
+   }
+
+   #bottom-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-self: flex-start;
+      padding: 3.5em 2em 4em;
+      margin: 0;
+      width: 100%;
+   }
+
+   #bottom-wrapper h3 {
+      font-size: 160%;
+      margin-bottom: 1.5em;
+   }
+
+   #bottom-wrapper h5 {
+      font-size: 140%;
+   }
+
+   #bottom-wrapper p {
+      width: 100%;
+      line-height: 1.4em;
+   }
+
+   #bottom-section img {
+      margin-top: 0em;
+      width: 100%;
+   }
+
+   #spotify-dot {
+      align-self: flex-start;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+   }
+
+   #spotify-dot img {
+      width: 6em;
+      margin: 3em 0;
+   }
+}
+
+/* ### WEARABLES ### Own version for devices < 210px display width ### */
+
+@media (max-width: 210px) {
+   * {
+      display: none;
+   }
+}
